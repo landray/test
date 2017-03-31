@@ -1,0 +1,21 @@
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+.casesAll {
+  width: 90%;
+  font-size: 14px;
+  margin: 0 auto 10px;
+}
+.casesAll button {
+  width: 100%;
+  border: 1px solid #099;
+  background-color: #099;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 10px 7px 10px;
+  margin: 10px auto;
+}
