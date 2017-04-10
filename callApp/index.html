@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>callApp</title>
+  <script src="assets/libs/kk-1.2.14.min.js"></script>
+  <style type="text/css">
+    body {
+      margin: 20px;
+    }
+    div {
+      margin: 10px;
+    }
+    button {
+      background: #0098e7;
+      color: #fff;
+      outline: none;
+      border-radius: 5px;
+      -webkit-appearance:none;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <button id="btnCallArgs">按钮A(备注：点击按钮应该弹出{name: hello, address: world})</button>
+  </div>
+  <div>
+    <button id="btnCallFail">按钮B(点击此按钮应该进入失败回调，错误代码：3)</button>
+  </div>
+  <script src="assets/index.js"></script>
+</body>
+</html>
