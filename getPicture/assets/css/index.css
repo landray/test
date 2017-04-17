@@ -1,0 +1,37 @@
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.pictureAll {
+  width: 90%;
+  font-size: 14px;
+  margin: 0 auto 10px;
+  padding-top: 10px;
+}
+
+.pictureAll .picArgs div {
+  margin-bottom: 5px;
+}
+
+.pictureAll .moduleName {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.pictureAll button {
+  width: 100%;
+  border: 1px solid #099;
+  background-color: #099;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 10px 7px 10px;
+  margin: 2px auto 20px;
+}
+.pictureAll .illustrate {
+  color: red;
+}
