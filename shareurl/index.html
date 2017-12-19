@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShareURL Test</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      font-size: 18px;
+      text-align: center;
+    }
+    button {
+      display: block;
+      font-size: inherit;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <p id="url-addr"></p>
+  <button onclick="changeHash()">CHange Hash #</button>
+  <button onclick="changeUrl()">Chnage Url</button>
+
+  <script type="text/javascript">
+    var count = 0
+    updateUrl()
+    function updateUrl() {
+      var d = document.getElementById('url-addr');
+      d.textContent = location.href;
+    }
+    function changeHash() {
+      location.hash = ++count;
+      document.title = 'ShareURL hash' + location.hash
+      updateUrl()
+    }
+    function changeUrl() {
+      history.pushState({'demo': ++count}, 'ShareURL url' + count, count + '.html')
+      updateUrl()  
+    }
+  </script>
+</body>
+</html>
